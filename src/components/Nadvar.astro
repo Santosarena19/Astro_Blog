@@ -1,0 +1,44 @@
+---
+import About from "../pages/about.astro"
+import Blog from "../pages/blog.astro"
+import Index from "../pages/index.astro"
+import ThemeToggle from "./ThemeToggle.astro"
+---
+<ul>
+   <li><a href="/">Inicio</a></li> 
+   <li><a href="/about/">Sobre Mi</a></li> 
+   <li><a href="/blog/">Mi Blog</a></li> 
+   <ThemeToggle/>
+</ul>
+   
+<style>
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  position: -webkit-sticky; 
+  position: sticky;
+  top: 0;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+  background-color: #111;
+}
+
+</style>
